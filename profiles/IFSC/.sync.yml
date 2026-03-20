@@ -1,0 +1,9 @@
+ignoredExtensions: []
+ignoredSettings: []
+resources:
+  - extensions
+  - keybindings
+  - settings
+  - snippets
+  - tasks
+additionalFiles: []
