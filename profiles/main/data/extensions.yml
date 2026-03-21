@@ -5,11 +5,17 @@ disabled:
     uuid: 00000000-0000-0000-0000-000000000000
   - id: esbenp.prettier-vscode
     uuid: 96fa4707-6983-4489-b7c5-d5ffdfdcce90
+  - id: gugacarbo.swing-gui-builder
+    uuid: 00000000-0000-0000-0000-000000000000
   - id: jpegg-dev.claude-code-settings-helper
+    uuid: 00000000-0000-0000-0000-000000000000
+  - id: kilocode.kilo-code
     uuid: 00000000-0000-0000-0000-000000000000
   - id: log-formatter.log-formatter
     uuid: 00000000-0000-0000-0000-000000000000
   - id: ms-azuretools.vscode-docker
+    uuid: 00000000-0000-0000-0000-000000000000
+  - id: Oracle.oracle-java
     uuid: 00000000-0000-0000-0000-000000000000
   - id: qwtel.sqlite-viewer
     uuid: 94fef082-6c2d-43ac-9540-6617b51a3a12
@@ -20,6 +26,8 @@ disabled:
   - id: vmware.vscode-boot-dev-pack
     uuid: 00000000-0000-0000-0000-000000000000
   - id: vmware.vscode-spring-boot
+    uuid: 00000000-0000-0000-0000-000000000000
+  - id: vscjava.vscode-gradle
     uuid: 00000000-0000-0000-0000-000000000000
   - id: vscjava.vscode-java-debug
     uuid: 00000000-0000-0000-0000-000000000000
@@ -66,8 +74,6 @@ enabled:
     uuid: de42a422-6bc2-4b9c-8fbc-7f88deb59cc8
   - id: johnny-zhao.oai-compatible-copilot
     uuid: f03bc8ea-9142-4d23-9493-e6c49ac89c1a
-  - id: kilocode.kilo-code
-    uuid: 849d53b8-0eb4-4e6b-b73f-870eefcbbf1b
   - id: markusylisiurunen.githubdarkmode
     uuid: b885204f-300c-434c-8d58-0a56cb525cc8
   - id: mechatroner.rainbow-csv
