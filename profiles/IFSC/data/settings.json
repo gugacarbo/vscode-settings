@@ -16,17 +16,7 @@
 	//|
 	//| === Ignored Extensions ===
 	//|
-	"settingsSync.ignoredExtensions": [
-		"ms-vscode.cpptools",
-		"lokalise.i18n-ally",
-		"platformio.platformio-ide",
-		"marlinfirmware.auto-build",
-		"jeff-hykin.better-cpp-syntax",
-		"ms-vscode.cpptools-extension-pack",
-		"amiralizadeh9480.laravel-extra-intellisense",
-		"bmewburn.vscode-intelephense-client",
-		"DEVSENSE.phptools-vscode",
-	],
+	"settingsSync.ignoredExtensions": [	],
 	//|
 	//| Settings Repository
 	//|
@@ -47,14 +37,6 @@
 		"~/.claude",
 	],
 	"syncSettings.hooks.preUpload": [],
-	"syncSettings.ignoredSettings": [
-		"terminal.integrated.profiles.windows",
-		"terminal.integrated.profiles.linux",
-		"terminal.integrated.defaultProfile.windows",
-		"terminal.integrated.defaultProfile.linux",
-		"window.newWindowProfile",
-		"biome.lsp.bin"
-	],
 	//|
 	//| === Window ===
 	//|
@@ -209,17 +191,6 @@
 	//| === MCP ===
 	//|
 	"chat.mcp.gallery.enabled": true,
-	"chat.mcp.serverSampling": {
-		"Global in Code: io.github.upstash/context7": {
-			"allowedModels": [
-				"copilot/auto",
-				"copilotcli/claude-haiku-4.5",
-				"claude-code/claude-haiku-4.5",
-				"copilotcli/gpt-5-mini",
-				"oaicopilot/MiniMax-M2.5-Coding::default"
-			]
-		}
-	},
 	"chat.tools.urls.autoApprove": {
 		"https://zod.dev": true,
 		"https://github.com": true
@@ -245,65 +216,6 @@
 		"country": "Brazil",
 		"timezone": "America/Sao_Paulo",
 	},
-	//|
-	//| === ATPlus Copilot ===
-	//|
-	"oaicopilot.commitLanguage": "Portuguese (Brazil)",
-	"oaicopilot.baseUrl": "",
-	"oaicopilot.delay": 0,
-	"oaicopilot.readFileLines": 0,
-	"oaicopilot.retry": {
-		"enabled": true,
-		"max_attempts": 3,
-		"interval_ms": 2000,
-		"status_codes": []
-	},
-	"oaicopilot.models": [
-		{
-			"id": "MiniMax-M2.7-Coding",
-			"owned_by": "atplus",
-			"displayName": "MiniMax M2.7 Coding",
-			"configId": "default",
-			"baseUrl": "https://llm.iproute.cloud",
-			"family": "minimax",
-			"context_length": 200000,
-			"max_tokens": 64000,
-			"vision": true,
-			"apiMode": "openai",
-			"temperature": 0,
-			"top_p": 1
-		},
-		{
-			"id": "MiniMax-M2.5-Coding",
-			"owned_by": "atplus",
-			"displayName": "MiniMax M2.5 Coding",
-			"configId": "default",
-			"baseUrl": "https://llm.iproute.cloud",
-			"family": "minimax",
-			"context_length": 200000,
-			"max_tokens": 64000,
-			"vision": true,
-			"apiMode": "openai",
-			"temperature": 0,
-			"top_p": 1,
-			"useForCommitGeneration": true
-		},
-		{
-			"id": "GLM-5-CODING",
-			"owned_by": "atplus",
-			"displayName": "GLM 5 Coding",
-			"baseUrl": "https://llm.iproute.cloud",
-			"family": "z.ai",
-			"context_length": 200000,
-			"max_tokens": 64000,
-			"vision": true,
-			"apiMode": "openai",
-			"temperature": 0,
-			"top_p": 1,
-			"enable_thinking": true,
-			"include_reasoning_in_request": true
-		}
-	],
 	//*
 	//* === Customizations ===
 	//*
@@ -568,41 +480,6 @@
 			"bold": true,
 			"italic": false,
 		},
-		// bundle-only:
-		{
-			"tag": "bundle-only:",
-			"color": "#e2a932",
-			"strikethrough": false,
-			"underline": false,
-			"backgroundColor": "transparent",
-			"bold": true,
-			"italic": false,
-		},
-		// no-bundle:
-		{
-			"tag": "no-bundle",
-			"color": "#ff6159",
-			"strikethrough": false,
-			"underline": false,
-			"backgroundColor": "transparent",
-			"bold": true,
-			"italic": false,
-		},
 	],
-	//!
-	//! === Unused ===
-	//!
-	//| === Prettier ===
-	//"prettier.useTabs": true,
-	//"prettier.semi": true,
-	//"prettier.arrowParens": "avoid",
-	//| === i18n ===
-	//"i18n-ally.localesPaths": "./locales",
-	//"i18n-ally.namespace": true,
-	//"i18n-ally.pathMatcher": "{locale}/{namespace}.json",
-	//"i18n-ally.dirStructure": "dir",
-	//"i18n-ally.ignoredLocales": [],
-	//"i18n-ally.displayLanguage": "en",
-	//"i18n-ally.translate.parallels": 40,
-	//^ === New Configs === ^
+
 }
