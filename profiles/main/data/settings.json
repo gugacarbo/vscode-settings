@@ -7,7 +7,9 @@
 	//|
 	"settingsSync.ignoredSettings": [
 		"terminal.integrated.profiles.windows",
+		"terminal.integrated.profiles.linux",
 		"terminal.integrated.defaultProfile.windows",
+		"terminal.integrated.defaultProfile.linux",
 		"window.newWindowProfile",
 		"biome.lsp.bin"
 	],
@@ -40,12 +42,19 @@
 		"snippets",
 		"tasks",
 	],
-	"syncSettings.additionalFiles": [],
+	"syncSettings.additionalFiles": [
+		"~/.copilot",
+		"~/.claude",
+	],
 	"syncSettings.hooks.preUpload": [],
-	//@ Auto Populated
-	"syncSettings.ignoredSettings": [],
-	//@ Auto Populated
-	"syncSettings.ignoredExtensions": [],
+	"syncSettings.ignoredSettings": [
+		"terminal.integrated.profiles.windows",
+		"terminal.integrated.profiles.linux",
+		"terminal.integrated.defaultProfile.windows",
+		"terminal.integrated.defaultProfile.linux",
+		"window.newWindowProfile",
+		"biome.lsp.bin"
+	],
 	//|
 	//| === Window ===
 	//|
@@ -69,7 +78,7 @@
 	"terminal.integrated.shellIntegration.enabled": true,
 	"terminal.integrated.cursorBlinking": true,
 	"terminal.integrated.cursorStyle": "block",
-	"terminal.integrated.defaultProfile.linux": "bash",
+	"terminal.integrated.fontLigatures.enabled": true,
 	//|
 	//| === Editor ===
 	//| Download font at https://www.jetbrains.com/lp/mono/
@@ -86,19 +95,18 @@
 	"editor.minimap.showSlider": "always",
 	"editor.minimap.renderCharacters": false,
 	"editor.bracketPairColorization.enabled": true,
-	//
 	//|
 	//| === onSave Actions ===
 	//|
 	"editor.codeActionsOnSave": {
 		"source.fixAll": "never",
-		// "source.sortImports": "explicit",
-		// "source.organizeImports": "explicit",
-		// "source.removeUnused.ts": "never",
-		// "source.addMissingImports.ts": "explicit",
 		"source.biome": "explicit",
+		"source.organizeImports.biome": "explicit",
+		// "source.sortImports": "explicit",
 		// "source.fixAll.biome": "explicit",
-		// "source.organizeImports.biome": "explicit",
+		// "source.removeUnused.ts": "never",
+		// "source.organizeImports": "explicit",
+		// "source.addMissingImports.ts": "explicit",
 	},
 	//|
 	//| === Importing Config ===
@@ -146,7 +154,7 @@
 		"editor.defaultFormatter": "biomejs.biome",
 	},
 	"[php]": {
-		"editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
+		"editor.defaultFormatter": "vscode.php-language-features",
 	},
 	"[json]": {
 		"editor.defaultFormatter": "vscode.json-language-features",
@@ -167,12 +175,6 @@
 		"Legnaghi"
 	],
 	//|
-	//| === Prettier ===
-	//|
-	"prettier.useTabs": true,
-	"prettier.semi": true,
-	"prettier.arrowParens": "avoid",
-	//|
 	//| === Markdown ===
 	//|
 	"markdown-preview-enhanced.enablePreviewZenMode": true,
@@ -189,16 +191,6 @@
 		"textMateRules": []
 	},
 	"markdown-preview-enhanced.revealjsTheme": "black.css",
-	//|
-	//| === i18n ===
-	//|
-	"i18n-ally.localesPaths": "./locales",
-	"i18n-ally.namespace": true,
-	"i18n-ally.pathMatcher": "{locale}/{namespace}.json",
-	"i18n-ally.dirStructure": "dir",
-	"i18n-ally.ignoredLocales": [],
-	"i18n-ally.displayLanguage": "en",
-	"i18n-ally.translate.parallels": 40,
 	//*
 	//* === AI ===
 	//*
@@ -213,33 +205,6 @@
 	"chat.viewSessions.orientation": "stacked",
 	"chat.requestQueuing.defaultAction": "queue",
 	"chat.checkpoints.showFileChanges": true,
-	"chat.instructionsFilesLocations": {
-		".github/instructions": true,
-		".claude/rules": true,
-		"~/.copilot/instructions": true,
-		"~/.instructions": true,
-		"~/.rules": true,
-		"~/.claude/rules": true,
-		"~/AppData/Roaming/Code/User/.copilot/instructions": true,
-		"~/AppData/Roaming/Code/User/.copilot/rules": true
-	},
-	"chat.agentFilesLocations": {
-		".github/agents": true,
-		".claude/agents": true,
-		"~/.copilot/agents": true,
-		"~/.agents": true,
-		"~/.claude/agents": true,
-		"~/AppData/Roaming/Code/User/.copilot/agents": true
-	},
-	"chat.agentSkillsLocations": {
-		".github/skills": true,
-		".agents/skills": true,
-		".claude/skills": true,
-		"~/.copilot/skills": true,
-		"~/.agents/skills": true,
-		"~/.claude/skills": true,
-		"~/AppData/Roaming/Code/User/.copilot/skills": true
-	},
 	//|
 	//| === MCP ===
 	//|
@@ -291,9 +256,23 @@
 		"enabled": true,
 		"max_attempts": 3,
 		"interval_ms": 2000,
-		// "status_codes": []
+		"status_codes": []
 	},
 	"oaicopilot.models": [
+		{
+			"id": "MiniMax-M2.7-Coding",
+			"owned_by": "atplus",
+			"displayName": "MiniMax M2.7 Coding",
+			"configId": "default",
+			"baseUrl": "https://llm.iproute.cloud",
+			"family": "minimax",
+			"context_length": 200000,
+			"max_tokens": 64000,
+			"vision": true,
+			"apiMode": "openai",
+			"temperature": 0,
+			"top_p": 1
+		},
 		{
 			"id": "MiniMax-M2.5-Coding",
 			"owned_by": "atplus",
@@ -301,8 +280,8 @@
 			"configId": "default",
 			"baseUrl": "https://llm.iproute.cloud",
 			"family": "minimax",
-			"context_length": 256000,
-			"max_tokens": 16384,
+			"context_length": 200000,
+			"max_tokens": 64000,
 			"vision": true,
 			"apiMode": "openai",
 			"temperature": 0,
@@ -313,31 +292,16 @@
 			"id": "GLM-5-CODING",
 			"owned_by": "atplus",
 			"displayName": "GLM 5 Coding",
-			"configId": "thinking",
 			"baseUrl": "https://llm.iproute.cloud",
 			"family": "z.ai",
-			"context_length": 256000,
-			"max_tokens": 16384,
+			"context_length": 200000,
+			"max_tokens": 64000,
 			"vision": true,
 			"apiMode": "openai",
 			"temperature": 0,
 			"top_p": 1,
 			"enable_thinking": true,
 			"include_reasoning_in_request": true
-		},
-		{
-			"id": "GLM-5-CODING",
-			"owned_by": "atplus",
-			"displayName": "GLM 5 Coding (no-thinking)",
-			"configId": "no-thinking",
-			"baseUrl": "https://llm.iproute.cloud",
-			"family": "z.ai",
-			"context_length": 256000,
-			"max_tokens": 16384,
-			"apiMode": "openai",
-			"temperature": 0,
-			"top_p": 1,
-			"enable_thinking": false
 		}
 	],
 	//*
@@ -431,6 +395,15 @@
 			],
 		},
 	],
+	"material-icon-theme.files.customClones": [
+		{
+			"base": "vitest",
+			"color": "blue-400",
+			"fileNames": [
+				".coveragebadgesrc"
+			],
+		}
+	],
 	//|
 	//| === Better Comments ===
 	//|
@@ -495,9 +468,9 @@
 			"bold": true,
 			"italic": false,
 		},
-		// :
+		// ~
 		{
-			"tag": ":",
+			"tag": "~",
 			"color": "#b080ff",
 			"strikethrough": false,
 			"underline": false,
@@ -615,7 +588,21 @@
 			"bold": true,
 			"italic": false,
 		},
-	]
+	],
+	//!
+	//! === Unused ===
+	//!
+	//| === Prettier ===
+	//"prettier.useTabs": true,
+	//"prettier.semi": true,
+	//"prettier.arrowParens": "avoid",
+	//| === i18n ===
+	//"i18n-ally.localesPaths": "./locales",
+	//"i18n-ally.namespace": true,
+	//"i18n-ally.pathMatcher": "{locale}/{namespace}.json",
+	//"i18n-ally.dirStructure": "dir",
+	//"i18n-ally.ignoredLocales": [],
+	//"i18n-ally.displayLanguage": "en",
+	//"i18n-ally.translate.parallels": 40,
 	//^ === New Configs === ^
-	,
 }

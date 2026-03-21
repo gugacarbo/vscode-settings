@@ -5,10 +5,24 @@ disabled:
     uuid: 00000000-0000-0000-0000-000000000000
   - id: esbenp.prettier-vscode
     uuid: 96fa4707-6983-4489-b7c5-d5ffdfdcce90
+  - id: jpegg-dev.claude-code-settings-helper
+    uuid: 00000000-0000-0000-0000-000000000000
   - id: log-formatter.log-formatter
     uuid: 00000000-0000-0000-0000-000000000000
   - id: qwtel.sqlite-viewer
     uuid: 94fef082-6c2d-43ac-9540-6617b51a3a12
+  - id: sst-dev.opencode
+    uuid: 00000000-0000-0000-0000-000000000000
+  - id: VisualStudioExptTeam.intellicode-api-usage-examples
+    uuid: 9fa2a00e-3bfa-4c2a-abc4-a865bb2b5cf3
+  - id: VisualStudioExptTeam.vscodeintellicode
+    uuid: 876e8f93-74d0-4f4f-91b7-34a09f19f444
+  - id: vmware.vscode-boot-dev-pack
+    uuid: 00000000-0000-0000-0000-000000000000
+  - id: vmware.vscode-spring-boot
+    uuid: 00000000-0000-0000-0000-000000000000
+  - id: vscjava.vscode-spring-boot-dashboard
+    uuid: 00000000-0000-0000-0000-000000000000
 enabled:
   - id: aaron-bond.better-comments
     uuid: 7a0110bb-231a-4598-aa1b-0769ea46d28b
@@ -68,6 +82,8 @@ enabled:
     uuid: 46cc5bbd-b098-4568-9b87-f91e07d26f2d
   - id: shd101wyy.markdown-preview-enhanced
     uuid: 3b1db1fc-c7f7-4bd6-9fa4-b499dfa99a8a
+  - id: smcpeak.default-keys-windows
+    uuid: 93f9de62-940d-4f24-aebd-5f3e532fec09
   - id: streetsidesoftware.code-spell-checker
     uuid: f6dbd813-b0a0-42c1-90ea-10dde9d925a7
   - id: streetsidesoftware.code-spell-checker-portuguese-brazilian
