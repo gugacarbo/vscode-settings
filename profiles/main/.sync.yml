@@ -1,8 +1,8 @@
 ignoredSettings:
-  - terminal.integrated.profiles.windows
-  - terminal.integrated.profiles.linux
   - terminal.integrated.defaultProfile.windows
   - terminal.integrated.defaultProfile.linux
+  - terminal.integrated.profiles.windows
+  - terminal.integrated.profiles.linux
   - window.newWindowProfile
   - biome.lsp.bin
 resources:

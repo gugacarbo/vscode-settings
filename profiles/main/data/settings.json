@@ -6,10 +6,10 @@
 	//| === Ignored Settings ===
 	//|
 	"settingsSync.ignoredSettings": [
-		"terminal.integrated.profiles.windows",
-		"terminal.integrated.profiles.linux",
 		"terminal.integrated.defaultProfile.windows",
 		"terminal.integrated.defaultProfile.linux",
+		"terminal.integrated.profiles.windows",
+		"terminal.integrated.profiles.linux",
 		"window.newWindowProfile",
 		"biome.lsp.bin"
 	],
@@ -17,14 +17,9 @@
 	//| === Ignored Extensions ===
 	//|
 	"settingsSync.ignoredExtensions": [
-		"ms-vscode.cpptools",
 		"lokalise.i18n-ally",
 		"platformio.platformio-ide",
 		"marlinfirmware.auto-build",
-		"jeff-hykin.better-cpp-syntax",
-		"ms-vscode.cpptools-extension-pack",
-		"amiralizadeh9480.laravel-extra-intellisense",
-		"bmewburn.vscode-intelephense-client",
 		"DEVSENSE.phptools-vscode",
 	],
 	//|
@@ -48,29 +43,26 @@
 	],
 	"syncSettings.hooks.preUpload": [],
 	"syncSettings.ignoredSettings": [
-		"terminal.integrated.profiles.windows",
-		"terminal.integrated.profiles.linux",
 		"terminal.integrated.defaultProfile.windows",
 		"terminal.integrated.defaultProfile.linux",
+		"terminal.integrated.profiles.windows",
+		"terminal.integrated.profiles.linux",
 		"window.newWindowProfile",
 		"biome.lsp.bin"
 	],
 	//|
 	//| === Window ===
 	//|
-	"window.commandCenter": false,
-	"window.menuBarVisibility": "compact",
-	"accessibility.verbosity.terminal": false,
-	"task.allowAutomaticTasks": "on",
-	//|
-	//| === Workbench ===
-	//|
-	"workbench.colorTheme": "GitHub Dark Mode",
 	"workbench.iconTheme": "material-icon-theme",
-	"workbench.startupEditor": "none",
+	"workbench.colorTheme": "GitHub Dark Mode",
 	"workbench.layoutControl.enabled": false,
 	"workbench.editor.empty.hint": "hidden",
 	"workbench.activityBar.compact": true,
+	"window.menuBarVisibility": "compact",
+	"workbench.startupEditor": "none",
+	"window.commandCenter": false,
+	"accessibility.verbosity.terminal": false,
+	"task.allowAutomaticTasks": "on",
 	//|
 	//| === Terminal ===
 	//|
@@ -272,21 +264,6 @@
 			"apiMode": "openai",
 			"temperature": 0,
 			"top_p": 1
-		},
-		{
-			"id": "MiniMax-M2.5-Coding",
-			"owned_by": "atplus",
-			"displayName": "MiniMax M2.5 Coding",
-			"configId": "default",
-			"baseUrl": "https://llm.iproute.cloud",
-			"family": "minimax",
-			"context_length": 200000,
-			"max_tokens": 64000,
-			"vision": true,
-			"apiMode": "openai",
-			"temperature": 0,
-			"top_p": 1,
-			"useForCommitGeneration": true
 		},
 		{
 			"id": "GLM-5-CODING",

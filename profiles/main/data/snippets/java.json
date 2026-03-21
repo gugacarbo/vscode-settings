@@ -1,0 +1,48 @@
+{
+	"spring-bean": {
+	  "prefix": "spring-bean",
+	  "body": [
+		"/* To use this snippet, create a new class and insert this snippet at the beginning of the new class */",
+		"@Configuration",
+		"public class MyConfig {",
+		"",
+		"    @Bean",
+		"    public MyBean myBean() {",
+		"        return new MyBean();",
+		"    }",
+		"}"
+	  ],
+	  "description": "Creates a Spring bean configuration class with a bean."
+	},
+	"spring-autowire": {
+		"prefix": "spring-autowire",
+		"body": [
+		  "/* To use this snippet, create a new class and insert this snippet at the beginning of the new class */",
+		  "@Component",
+		  "public class MyComponent {",
+		  "",
+		  "    @Autowired",
+		  "    private MyDependency myDependency;",
+		  "",
+		  "}"
+		],
+		"description": "Creates a Spring component with autowired dependency."
+	  },
+	  "spring-controller": {
+		"prefix": "spring-controller",
+		"body": [
+		  "/* To use this snippet, create a new class and insert this snippet at the beginning of the new class */",
+		  "@Controller",
+		  "@RequestMapping(\"/${1:controller-name}\")",
+		  "public class ${2:MyController} {",
+		  "",
+		  "    @GetMapping(\"/\")",
+		  "    public String ${3:index}() {",
+		  "        return \"${4:index}\";",
+		  "    }",
+		  "",
+		  "}"
+		],
+		"description": "Creates a Spring MVC controller with a GET mapping."
+	}
+  }
