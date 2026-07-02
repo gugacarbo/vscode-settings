@@ -1,0 +1,18 @@
+2026-07-02T00:19:30.709Z [INFO] Starting CLI in server mode (stdio)
+2026-07-02T00:19:30.712Z [INFO] Starting CLI in stdio mode (Rust JSON-RPC engine)
+2026-07-02T00:19:30.716Z [INFO] CLI server ready (stdio mode, Rust JSON-RPC engine)
+2026-07-02T00:19:30.717Z [INFO] Server started, waiting for requests
+2026-07-02T00:19:30.724Z [INFO] Shell completions: installed fish completions to /home/gustavo/.config/fish/completions/copilot.fish
+2026-07-02T00:23:03.913Z [INFO] Closing session 3b8a419f-b75f-4d62-ad30-a37a86463854
+2026-07-02T00:23:03.914Z [ERROR] Failed to delete session 3b8a419f-b75f-4d62-ad30-a37a86463854: Error: Session file not found for 3b8a419f-b75f-4d62-ad30-a37a86463854
+2026-07-02T00:23:05.022Z [INFO] Closing session f6396c4c-2114-4847-a574-15cdd499bc6e
+2026-07-02T00:23:05.022Z [ERROR] Failed to delete session f6396c4c-2114-4847-a574-15cdd499bc6e: Error: Session file not found for f6396c4c-2114-4847-a574-15cdd499bc6e
+2026-07-02T00:24:44.333Z [INFO] Closing session d40de1ab-1d1e-44ef-9453-c316bbef59a3
+2026-07-02T00:24:44.334Z [ERROR] Failed to delete session d40de1ab-1d1e-44ef-9453-c316bbef59a3: Error: Session file not found for d40de1ab-1d1e-44ef-9453-c316bbef59a3
+2026-07-02T00:24:53.704Z [INFO] Closing session 1e4ea827-b32d-4a80-84b8-7d7130188110
+2026-07-02T00:24:53.705Z [ERROR] Failed to delete session 1e4ea827-b32d-4a80-84b8-7d7130188110: Error: Session file not found for 1e4ea827-b32d-4a80-84b8-7d7130188110
+2026-07-02T00:27:46.693Z [INFO] Shutting down: stdin closed
+2026-07-02T00:27:46.695Z [INFO] Starting graceful shutdown of CLI server
+2026-07-02T00:27:46.695Z [INFO] Destroying 0 active sessions
+2026-07-02T00:27:46.697Z [INFO] Rust JSON-RPC engine stopped successfully
+2026-07-02T00:27:46.698Z [INFO] CLI server stopped successfully

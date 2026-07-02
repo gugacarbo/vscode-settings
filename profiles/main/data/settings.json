@@ -16,32 +16,22 @@
 	//|
 	//| === Ignored Extensions ===
 	//|
-	"settingsSync.ignoredExtensions": [
-		"lokalise.i18n-ally",
-		"platformio.platformio-ide",
-		"marlinfirmware.auto-build",
-		"DEVSENSE.phptools-vscode",
-	],
+	"settingsSync.ignoredExtensions": [],
 	//|
 	//| Settings Repository
 	//|
 	"syncSettings.confirmSync": true,
 	"syncSettings.openOutputOnActivity": true,
-	"syncSettings.hostname": "{{hostname}}",
-	"syncSettings.gitInitMessage": "Profile ({{profile}}): init at {{now|date:iso}}",
-	"syncSettings.gitUpdateMessage": "Profile ({{profile}}): update at {{now|date:iso}}",
 	"syncSettings.resources": [
 		"extensions",
 		"keybindings",
 		"settings",
 		"snippets",
-		"tasks",
+		"tasks"
 	],
 	"syncSettings.additionalFiles": [
-		"~/.copilot",
-		"~/.claude",
+		"~/.copilot"
 	],
-	"syncSettings.hooks.preUpload": [],
 	"syncSettings.ignoredSettings": [
 		"terminal.integrated.defaultProfile.windows",
 		"terminal.integrated.defaultProfile.linux",
@@ -50,23 +40,23 @@
 		"window.newWindowProfile",
 		"biome.lsp.bin"
 	],
-	//|
-	//| === Window ===
-	//|
-	"workbench.iconTheme": "material-icon-theme",
 	"workbench.colorTheme": "GitHub Dark Mode",
+	"workbench.iconTheme": "material-icon-theme",
 	"workbench.layoutControl.enabled": false,
 	"workbench.editor.empty.hint": "hidden",
 	"workbench.activityBar.compact": true,
-	"window.menuBarVisibility": "compact",
 	"workbench.startupEditor": "none",
-	"window.commandCenter": false,
-	"accessibility.verbosity.terminal": false,
 	"task.allowAutomaticTasks": "on",
+	//|
+	//| === Window ===
+	//|
+	"window.menuBarVisibility": "compact",
+	"window.commandCenter": false,
 	//|
 	//| === Terminal ===
 	//|
-	"terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+	//"terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+	"terminal.integrated.fontFamily": "'JetBrains Mono', monospace",
 	"terminal.integrated.shellIntegration.enabled": true,
 	"terminal.integrated.cursorBlinking": true,
 	"terminal.integrated.cursorStyle": "block",
@@ -75,7 +65,7 @@
 	//| === Editor ===
 	//| Download font at https://www.jetbrains.com/lp/mono/
 	//|
-	"editor.fontFamily": "JetBrains Mono",
+	"editor.fontFamily": "'JetBrains Mono', monospace",
 	"editor.fontSize": 14,
 	"editor.wordWrap": "on",
 	"editor.formatOnSave": true,
@@ -87,15 +77,16 @@
 	"editor.minimap.showSlider": "always",
 	"editor.minimap.renderCharacters": false,
 	"editor.bracketPairColorization.enabled": true,
+	"editor.multiCursorModifier": "ctrlCmd",
 	//|
 	//| === onSave Actions ===
 	//|
 	"editor.codeActionsOnSave": {
 		"source.fixAll": "never",
 		"source.biome": "explicit",
-		"source.organizeImports.biome": "explicit",
+		"source.fixAll.biome": "explicit",
+		"source.organizeImports.biome": "explicit"
 		// "source.sortImports": "explicit",
-		// "source.fixAll.biome": "explicit",
 		// "source.removeUnused.ts": "never",
 		// "source.organizeImports": "explicit",
 		// "source.addMissingImports.ts": "explicit",
@@ -111,56 +102,85 @@
 		"*/@radix-ui/*",
 		"*@radix-ui/*",
 		"/@radix-ui*",
+		"@base-ui*",
+		"@base-ui/*",
+		"@base-ui/react"
 	],
-	//*
-	//* ** Files ***
-	//*
+	//|
+	//| === Files ===
+	//|
 	"files.trimTrailingWhitespace": true,
 	"files.insertFinalNewline": true,
 	"files.associations": {
 		"*.embeddedhtml": "html",
 		"*.vars": "properties",
-		".env*": "dotenv"
+		".env*": "dotenv",
+		"sdkconfig*": "makefile",
+		"*.cpp": "cpp",
+		"*.mdx": "markdown",
+		"SKILL.md": "markdown"
 	},
 	"files.watcherExclude": {
 		"**/.git/objects/**": true,
 		"**/node_modules/**": true,
-		"**/build/**": true,
+		"**/build/**": true
 	},
 	//|
 	//| === File Formatters ===
 	//|
 	"[javascript]": {
-		"editor.defaultFormatter": "biomejs.biome",
+		"editor.defaultFormatter": "biomejs.biome"
 	},
 	"[typescript]": {
-		"editor.defaultFormatter": "biomejs.biome",
+		"editor.defaultFormatter": "biomejs.biome"
 	},
 	"[typescriptreact]": {
-		"editor.defaultFormatter": "biomejs.biome",
+		"editor.defaultFormatter": "biomejs.biome"
 	},
 	"[javascriptreact]": {
-		"editor.defaultFormatter": "biomejs.biome",
-	},
-	"[html]": {
-		"editor.defaultFormatter": "biomejs.biome",
-	},
-	"[php]": {
-		"editor.defaultFormatter": "vscode.php-language-features",
+		"editor.defaultFormatter": "biomejs.biome"
 	},
 	"[json]": {
-		"editor.defaultFormatter": "vscode.json-language-features",
+		"editor.defaultFormatter": "vscode.json-language-features"
 	},
 	"[jsonc]": {
-		"editor.defaultFormatter": "vscode.json-language-features",
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+	"[html]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[php]": {
+		"editor.defaultFormatter": "vscode.php-language-features"
 	},
 	"[markdown]": {
-		"editor.defaultFormatter": "yzhang.markdown-all-in-one",
+		"editor.defaultFormatter": "yzhang.markdown-all-in-one"
+	},
+	"[css]": {
+		"editor.defaultFormatter": "biomejs.biome"
 	},
 	//|
 	//| === Cspell ===
 	//|
-	"cSpell.language": "PT-br, en",
+	"cSpell.language": "pt-BR, en",
+	"cSpell.caseSensitive": false,
+	"cSpell.languageSettings": [
+		{
+			"languageId": "typescript",
+			"caseSensitive": false
+		},
+		{
+			"languageId": "typescriptreact",
+			"caseSensitive": false
+		},
+		{
+			"languageId": "javascript",
+			"caseSensitive": false
+		},
+		{
+			"languageId": "javascriptreact",
+			"caseSensitive": false
+		}
+	],
 	"cSpell.userWords": [
 		"Carbonera",
 		"gugacarbo",
@@ -171,7 +191,7 @@
 	//|
 	"markdown-preview-enhanced.enablePreviewZenMode": true,
 	"markdown-preview-enhanced.previewTheme": "github-dark.css",
-	"markdown-preview-enhanced.codeBlockTheme": "github-dark.css",
+	"markdown-preview-enhanced.codeBlockTheme": "auto.css",
 	//|
 	//| === Dotenv ===
 	//|
@@ -182,10 +202,27 @@
 	"editor.tokenColorCustomizations": {
 		"textMateRules": []
 	},
+	//|
+	//| === Markdown ===
+	//|
 	"markdown-preview-enhanced.revealjsTheme": "black.css",
+	"markdown-preview-enhanced.chromePath": "/usr/bin/google-chrome",
+	"makefile.configureOnOpen": true,
 	//*
 	//* === AI ===
 	//*
+	//|
+	//| === MCP ===
+	//|
+	"chat.mcp.gallery.enabled": true,
+	"chat.mcp.serverSampling": {},
+	"chat.tools.urls.autoApprove": {
+		"https://code.visualstudio.com": true,
+		"https://github.com/microsoft/vscode/wiki/*": true,
+		"https://zod.dev": true,
+		"https://github.com": true,
+		"https://*.platformio.org": true
+	},
 	//|
 	//| === Chat ===
 	//|
@@ -194,28 +231,13 @@
 	"chat.agent.maxRequests": 100,
 	"chat.agent.codeBlockProgress": true,
 	"chat.agent.thinkingStyle": "collapsedPreview",
-	"chat.viewSessions.orientation": "stacked",
 	"chat.requestQueuing.defaultAction": "queue",
 	"chat.checkpoints.showFileChanges": true,
-	//|
-	//| === MCP ===
-	//|
-	"chat.mcp.gallery.enabled": true,
-	"chat.mcp.serverSampling": {
-		"Global in Code: io.github.upstash/context7": {
-			"allowedModels": [
-				"copilot/auto",
-				"copilotcli/claude-haiku-4.5",
-				"claude-code/claude-haiku-4.5",
-				"copilotcli/gpt-5-mini",
-				"oaicopilot/MiniMax-M2.5-Coding::default"
-			]
-		}
+	"chatgpt.followUpQueueMode": "queue",
+	"chat.tools.terminal.autoApprove": {
+		"npx markdownlint-cli2": true
 	},
-	"chat.tools.urls.autoApprove": {
-		"https://zod.dev": true,
-		"https://github.com": true
-	},
+	"chat.mcp.autostart": "newAndOutdated",
 	//|
 	//| === GitHub Copilot ===
 	//|
@@ -235,52 +257,31 @@
 		"city": "Lages",
 		"region": "Santa Catarina",
 		"country": "Brazil",
-		"timezone": "America/Sao_Paulo",
+		"timezone": "America/Sao_Paulo"
 	},
-	//|
-	//| === ATPlus Copilot ===
-	//|
-	"oaicopilot.commitLanguage": "Portuguese (Brazil)",
-	"oaicopilot.baseUrl": "",
-	"oaicopilot.delay": 0,
-	"oaicopilot.readFileLines": 0,
-	"oaicopilot.retry": {
-		"enabled": true,
-		"max_attempts": 3,
-		"interval_ms": 2000,
-		"status_codes": []
+	"chat.agentFilesLocations": {
+		".agents/agents": true
 	},
-	"oaicopilot.models": [
-		{
-			"id": "MiniMax-M2.7-Coding",
-			"owned_by": "atplus",
-			"displayName": "MiniMax M2.7 Coding",
-			"configId": "default",
-			"baseUrl": "https://llm.iproute.cloud",
-			"family": "minimax",
-			"context_length": 200000,
-			"max_tokens": 64000,
-			"vision": true,
-			"apiMode": "openai",
-			"temperature": 0,
-			"top_p": 1
-		},
-		{
-			"id": "GLM-5-CODING",
-			"owned_by": "atplus",
-			"displayName": "GLM 5 Coding",
-			"baseUrl": "https://llm.iproute.cloud",
-			"family": "z.ai",
-			"context_length": 200000,
-			"max_tokens": 64000,
-			"vision": true,
-			"apiMode": "openai",
-			"temperature": 0,
-			"top_p": 1,
-			"enable_thinking": true,
-			"include_reasoning_in_request": true
-		}
-	],
+	"chat.instructionsFilesLocations": {
+		".agents/rules": true
+	},
+	"json.schemaDownload.trustedDomains": {
+		"https://biomejs.dev": true,
+		"https://developer.microsoft.com/json-schemas/": true,
+		"https://json-schema.org/": true,
+		"https://json.schemastore.org/": true,
+		"https://mintlify.com": true,
+		"https://models.dev": true,
+		"https://opencode.ai": true,
+		"https://raw.githubusercontent.com": true,
+		"https://raw.githubusercontent.com/devcontainers/spec/": true,
+		"https://raw.githubusercontent.com/microsoft/vscode/": true,
+		"https://schemastore.azurewebsites.net/": true,
+		"https://turbo.build": true,
+		"https://ui.shadcn.com": true,
+		"https://unpkg.com": true,
+		"https://www.schemastore.org/": true
+	},
 	//*
 	//* === Customizations ===
 	//*
@@ -295,7 +296,7 @@
 			"lightColor": "blue-800",
 			"folderNames": [
 				"ini"
-			],
+			]
 		},
 		{
 			"name": "ffmpeg",
@@ -304,7 +305,7 @@
 			"lightColor": "green-800",
 			"folderNames": [
 				"ffmpeg"
-			],
+			]
 		},
 		{
 			"name": "factory",
@@ -314,7 +315,7 @@
 			"folderNames": [
 				"factory",
 				"factories"
-			],
+			]
 		},
 		{
 			"name": "components",
@@ -323,7 +324,7 @@
 			"lightColor": "orange-700",
 			"folderNames": [
 				"components"
-			],
+			]
 		},
 		{
 			"name": "ui",
@@ -332,7 +333,7 @@
 			"lightColor": "#08080a",
 			"folderNames": [
 				"ui"
-			],
+			]
 		},
 		{
 			"name": "features",
@@ -341,7 +342,7 @@
 			"lightColor": "#09c",
 			"folderNames": [
 				"features"
-			],
+			]
 		},
 		{
 			"name": "const",
@@ -351,7 +352,7 @@
 			"folderNames": [
 				"const",
 				"consts"
-			],
+			]
 		},
 		{
 			"name": "http",
@@ -360,7 +361,7 @@
 			"lightColor": "#fd3434",
 			"folderNames": [
 				"http"
-			],
+			]
 		},
 		{
 			"name": "nocobase",
@@ -369,8 +370,8 @@
 			"lightColor": "#444",
 			"folderNames": [
 				"nocobase"
-			],
-		},
+			]
+		}
 	],
 	"material-icon-theme.files.customClones": [
 		{
@@ -378,7 +379,7 @@
 			"color": "blue-400",
 			"fileNames": [
 				".coveragebadgesrc"
-			],
+			]
 		}
 	],
 	//|
@@ -393,7 +394,7 @@
 			"underline": false,
 			"backgroundColor": "transparent",
 			"bold": true,
-			"italic": false,
+			"italic": false
 		},
 		// ?
 		{
@@ -403,7 +404,7 @@
 			"underline": false,
 			"backgroundColor": "transparent",
 			"bold": true,
-			"italic": false,
+			"italic": false
 		},
 		// |
 		{
@@ -413,7 +414,7 @@
 			"underline": false,
 			"backgroundColor": "transparent",
 			"bold": true,
-			"italic": false,
+			"italic": false
 		},
 		// [
 		{
@@ -423,7 +424,7 @@
 			"underline": false,
 			"backgroundColor": "transparent",
 			"bold": true,
-			"italic": false,
+			"italic": false
 		},
 		// -
 		{
@@ -433,7 +434,7 @@
 			"underline": false,
 			"backgroundColor": "transparent",
 			"bold": true,
-			"italic": false,
+			"italic": false
 		},
 		// *
 		{
@@ -443,7 +444,7 @@
 			"underline": false,
 			"backgroundColor": "transparent",
 			"bold": true,
-			"italic": false,
+			"italic": false
 		},
 		// ~
 		{
@@ -453,7 +454,7 @@
 			"underline": false,
 			"backgroundColor": "transparent",
 			"bold": true,
-			"italic": false,
+			"italic": false
 		},
 		// TODO
 		{
@@ -463,7 +464,7 @@
 			"underline": false,
 			"backgroundColor": "transparent",
 			"bold": true,
-			"italic": false,
+			"italic": false
 		},
 		// FIXME
 		{
@@ -473,7 +474,7 @@
 			"underline": false,
 			"backgroundColor": "transparent",
 			"bold": true,
-			"italic": false,
+			"italic": false
 		},
 		// HACK
 		{
@@ -483,7 +484,7 @@
 			"underline": false,
 			"backgroundColor": "transparent",
 			"bold": true,
-			"italic": false,
+			"italic": false
 		},
 		// NOTE
 		{
@@ -493,7 +494,7 @@
 			"underline": false,
 			"backgroundColor": "transparent",
 			"bold": true,
-			"italic": false,
+			"italic": false
 		},
 		// @
 		{
@@ -503,7 +504,7 @@
 			"underline": false,
 			"backgroundColor": "transparent",
 			"bold": true,
-			"italic": false,
+			"italic": false
 		},
 		// #
 		{
@@ -513,7 +514,7 @@
 			"underline": false,
 			"backgroundColor": "transparent",
 			"bold": true,
-			"italic": false,
+			"italic": false
 		},
 		// >
 		{
@@ -523,7 +524,7 @@
 			"underline": false,
 			"backgroundColor": "transparent",
 			"bold": true,
-			"italic": false,
+			"italic": false
 		},
 		// $
 		{
@@ -533,7 +534,7 @@
 			"underline": false,
 			"backgroundColor": "transparent",
 			"bold": true,
-			"italic": false,
+			"italic": false
 		},
 		// ^
 		{
@@ -543,7 +544,7 @@
 			"underline": false,
 			"backgroundColor": "transparent",
 			"bold": true,
-			"italic": false,
+			"italic": false
 		},
 		// bundle-only:
 		{
@@ -553,7 +554,7 @@
 			"underline": false,
 			"backgroundColor": "transparent",
 			"bold": true,
-			"italic": false,
+			"italic": false
 		},
 		// no-bundle:
 		{
@@ -563,9 +564,31 @@
 			"underline": false,
 			"backgroundColor": "transparent",
 			"bold": true,
-			"italic": false,
-		},
+			"italic": false
+		}
 	],
+	"diffEditor.maxComputationTime": 0,
+	"claudeCode.preferredLocation": "panel",
+	"github.copilot.chat.agentDebugLog.fileLogging.enabled": true,
+	"editor.unicodeHighlight.invisibleCharacters": false,
+	"workbench.editor.useModal": "some",
+	"diffEditor.hideUnchangedRegions.enabled": true,
+	"explorer.fileNesting.patterns": {
+		"*.ts": "${capture}.js",
+		"*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+		"*.jsx": "${capture}.js",
+		"*.tsx": "${capture}.ts",
+		"tsconfig.json": "tsconfig.*.json",
+		"package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb, bun.lock",
+		"*.sqlite": "${capture}.${extname}-*",
+		"*.db": "${capture}.${extname}-*",
+		"*.sqlite3": "${capture}.${extname}-*",
+		"*.db3": "${capture}.${extname}-*",
+		"*.sdb": "${capture}.${extname}-*",
+		"*.s3db": "${capture}.${extname}-*"
+	},
+	"chat.viewSessions.orientation": "stacked",
+	//^ === New Configs === ^
 	//!
 	//! === Unused ===
 	//!
@@ -581,5 +604,8 @@
 	//"i18n-ally.ignoredLocales": [],
 	//"i18n-ally.displayLanguage": "en",
 	//"i18n-ally.translate.parallels": 40,
-	//^ === New Configs === ^
+	"chat.editor.defaultProvider": "local",
+	"sessions.chat.localAgent.enabled": true,
+	"chat.editor.localAgent.enabled": true,
+	"chat.agent.enabled": true,
 }

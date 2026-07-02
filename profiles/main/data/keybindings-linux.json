@@ -1,1 +1,113 @@
-[]
+[
+	{
+		"key": "shift+enter",
+		"command": "workbench.action.terminal.sendSequence",
+		"when": "terminalFocus",
+		"args": {
+			"text": "\u001b\r"
+		}
+	},
+	{
+		"key": "ctrl+/",
+		"command": "editor.action.commentLine",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "ctrl+/",
+		"command": "-editor.action.commentLine",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "ctrl+shift+'",
+		"command": "workbench.action.terminal.new"
+	},
+	{
+		"key": "ctrl+'",
+		"command": "workbench.action.terminal.toggleTerminal",
+		"when": "terminal.active"
+	},
+	{
+		"key": "ctrl+shift+[BracketLeft]",
+		"command": "-workbench.action.terminal.toggleTerminal",
+		"when": "terminal.active"
+	},
+	{
+		"key": "shift+alt+down",
+		"command": "editor.action.copyLinesDownAction",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "ctrl+shift+alt+down",
+		"command": "-editor.action.copyLinesDownAction",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "shift+alt+up",
+		"command": "-notebook.cell.copyUp",
+		"when": "notebookEditorFocused && !inputFocus"
+	},
+	{
+		"key": "shift+alt+up",
+		"command": "editor.action.copyLinesUpAction",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "ctrl+shift+alt+up",
+		"command": "-editor.action.copyLinesUpAction",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "ctrl+shift+f",
+		"command": "-workbench.view.search",
+		"when": "workbench.view.search.active && neverMatch =~ /doesNotMatch/"
+	},
+	{
+		"key": "ctrl+shift+f",
+		"command": "-workbench.action.terminal.searchWorkspace",
+		"when": "terminalFocus && terminalProcessSupported && terminalTextSelected"
+	},
+	{
+		"key": "ctrl+shift+f",
+		"command": "-workbench.action.findInFiles"
+	},
+	{
+		"key": "shift+alt+f",
+		"command": "editor.action.formatDocument",
+		"when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+	},
+	{
+		"key": "ctrl+shift+i",
+		"command": "-editor.action.formatDocument",
+		"when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+	},
+	{
+		"key": "shift+alt+f",
+		"command": "editor.action.formatDocument.none",
+		"when": "editorTextFocus && !editorHasDocumentFormattingProvider && !editorReadonly"
+	},
+	{
+		"key": "ctrl+shift+i",
+		"command": "-editor.action.formatDocument.none",
+		"when": "editorTextFocus && !editorHasDocumentFormattingProvider && !editorReadonly"
+	},
+	{
+		"key": "ctrl+shift+alt+t",
+		"command": "workbench.action.terminal.openNativeConsole",
+		"when": "!terminalFocus"
+	},
+	{
+		"key": "ctrl+shift+c",
+		"command": "-workbench.action.terminal.openNativeConsole",
+		"when": "!terminalFocus"
+	},
+	{
+		"key": "shift+alt+r",
+		"command": "-pr.revealFileInOS",
+		"when": "listFocus && focusedView =~ /(pr|prStatus):github/"
+	},
+	{
+		"key": "ctrl+b",
+		"command": "-markdown.extension.editing.toggleBold",
+		"when": "editorTextFocus && !editorReadonly && editorLangId =~ /^markdown$|^rmd$|^quarto$/"
+	}
+]

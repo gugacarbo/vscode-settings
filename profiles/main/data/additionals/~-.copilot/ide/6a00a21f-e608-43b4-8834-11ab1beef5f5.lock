@@ -1,0 +1,14 @@
+{
+  "socketPath": "/tmp/mcp-CecfBJ/mcp.sock",
+  "scheme": "unix",
+  "headers": {
+    "Authorization": "Nonce c0ba6d49-9491-4baf-9845-a1e35c86b62c"
+  },
+  "pid": 217089,
+  "ideName": "Visual Studio Code",
+  "timestamp": 1782952949415,
+  "workspaceFolders": [
+    "/home/gustavo/Apps/lite-llm-analytics"
+  ],
+  "isTrusted": true
+}

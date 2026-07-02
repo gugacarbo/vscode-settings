@@ -1,0 +1,10 @@
+2026-07-02T00:16:17.649Z [INFO] Starting CLI in server mode (stdio)
+2026-07-02T00:16:17.651Z [INFO] Starting CLI in stdio mode (Rust JSON-RPC engine)
+2026-07-02T00:16:17.654Z [INFO] CLI server ready (stdio mode, Rust JSON-RPC engine)
+2026-07-02T00:16:17.654Z [INFO] Server started, waiting for requests
+2026-07-02T00:16:17.662Z [INFO] Shell completions: installed fish completions to /home/gustavo/.config/fish/completions/copilot.fish
+2026-07-02T00:17:39.244Z [INFO] Shutting down: stdin closed
+2026-07-02T00:17:39.246Z [INFO] Starting graceful shutdown of CLI server
+2026-07-02T00:17:39.246Z [INFO] Destroying 0 active sessions
+2026-07-02T00:17:39.249Z [INFO] Rust JSON-RPC engine stopped successfully
+2026-07-02T00:17:39.249Z [INFO] CLI server stopped successfully
